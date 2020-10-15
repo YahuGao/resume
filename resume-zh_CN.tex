@@ -9,15 +9,20 @@
 % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage{tabu}
+\usepackage{progressbar}
+\usepackage{multirow}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
-
-\rightline{\email{gao\_yahu@163.com}}
-\rightline{\phone{(+86) 131-2029-0626}}
-%\rightline{\linkedin[Gao Yahu]{https://www.linkedin.com/in/gao-yahu}}
-
-\name{\leftline{高亚虎}}
+\Large{
+  \begin{tabu}{ c l r }
+    \multirow{4}{1in}{\includegraphics[width=1in]{profile}} & \scshape{高亚虎} & {Linux~}\progressbar{0.55} \\
+    & \email{gao\_yahu@163.com} & {Python~}\progressbar{0.50} \\
+    & \phone{(+86) 131-2029-0626\ \ \ \ } & {C~}\progressbar{0.5} \\
+    & \github[github.com/yahugao]{https://github.com/yahugao} & {shell~}\progressbar{0.3}
+  \end{tabu}
+}
 
 \section{\faUsers\ 工作经历}
 \datedsubsection{\textbf{瞬联软件科技有限公司}， 北京}{2017/09/20 -- 现在}
@@ -34,7 +39,6 @@
         \item {ulimit 设置内存上限不生效}
     \end{itemize}
 \end{itemize}
-
 
 \section{\faUsers\ 实习经历}
 \datedsubsection{\textbf{英特尔（中国）有限公司} 北京}{2016年8月 -- 2017年2月}
@@ -110,3 +114,8 @@
 %\bibliographystyle{IEEETran}
 %\bibliography{mycite}
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
