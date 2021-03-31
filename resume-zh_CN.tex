@@ -17,27 +17,27 @@
 \pagenumbering{gobble} % suppress displaying page number
 \Large{
   \begin{tabu}{ c l r }
-    \multirow{4}{1in}{\includegraphics[width=1in]{profile}} & \scshape{高亚虎} & {Linux~}\progressbar{0.90} \\
-    & \email{gao\_yahu@163.com} & {Python~}\progressbar{0.89} \\
-    & \phone{(+86) 131-2029-0626\ \ \ \ } & {C~}\progressbar{0.90} \\
-    & \github[github.com/yahugao]{https://github.com/yahugao} & {shell~}\progressbar{0.85}
+    \multirow{4}{1in}{\includegraphics[width=1in]{profile}} & \scshape{高亚虎} & {Linux~}\progressbar{0.650} \\
+    & \email{gao\_yahu@163.com} & {Python~}\progressbar{0.60} \\
+    & \phone{(+86) 131-2029-0626\ \ \ \ } & {C~}\progressbar{0.60} \\
+    & \github[github.com/yahugao]{https://github.com/yahugao} & {shell~}\progressbar{0.45}
   \end{tabu}
 }
 \section{\faGraduationCap\ 知识与技能}\normalsize
 \begin{itemize}
   \item {熟悉Linux系统及其常用的调试手段。对Linux内核的文件系统和有较为深入的了解。}
-  \item {熟悉Linux系统发行版构建工具Yocto，了解其工作流程和语法，能为软件适配相应的recipe。并根据需要对recipe和meta进行设计。}
-  \item {了解CVE的漏洞发布流程，能够根据漏洞信息快速为相应软件移植需要的patch。}
-  \item {熟悉rpmbuild工具，能够根据软件特性构建相应的spec文件; 熟悉Qemu虚拟化工具。}
-  \item {能熟练使用版本控制工具Git; 文本编辑工具VIM和EMACS。}
+  \item {熟悉Linux系统发行版构建工具Yocto，了解其工作流程和语法，能为软件适配相应的Recipe。并根据需要对Recipe和Meta进行设计。}
+  \item {了解CVE的漏洞发布流程，能够根据漏洞信息快速为相应软件移植需要的Patch。}
+  \item {熟悉rpmbuild工具，能够根据软件特性构建相应的Spec文件; 熟悉Qemu虚拟化工具。}
+  \item {能熟练使用版本控制工具Git; 文本编辑工具Vim和Emacs。}
   \end{itemize}
 
 \section{\faUsers\ 工作经历}\normalsize
-\datedsubsection{\textbf{瞬联软件科技有限公司}， 北京}{2017年9月 -- 2019年11月}
-\role{系统工程师}{职责: windriver linux发行版的维护和升级}
+\datedsubsection{\textbf{风河系统软件有限公司}， 北京}{2017年9月 -- 2019年11月，2020年11月-今}
+\role{系统工程师}{职责: windriver linux发行版的维护和升级(人事外包)}
 \begin{itemize}
-\item {主要工作内容: 参与WindRiver Linux系统的维护与测试。调查和维护客户在系统运行中出现的各种bug，进行调查和修复，并对客户做出解释。CVE漏洞的监控和修复。根据客户的要求对NVD网站公布的软件漏洞进行监控，对系统中涉及的CVE漏洞进行修复。按照客户的要求对系统做出定制化的改动。}
-\item {主要成就：对kernel的文件系统模块有了深入的了解，解决了NFS文件系统不能更新客户端创建文件权限的bug、由NFS引起的系统无法正常启动、proc文件系统中潜在的use after free问题和NFSv4延迟响应等问题。根据堆栈信息, 修复了三周出现一次的Procfs引起的内核crash。利用Gitolite, git-daemon, cgit，Apache2和grokmirror等工具为团队搭建了git仓库管理系统。}
+  \item {主要工作内容: 负责WindRiver Linux系统的维护与升级。调查和修复客户在系统运行中出现的各种bug，并对客户做出解释。对NVD网站公布的软件漏洞进行监控，修复对系统有较大影响的CVE漏洞。按照客户的要求对系统做出定制化的改动。}
+\item {主要业绩：在问题可能无法复现的前提下，修复内核中的空指针异常、NFS文件系统客户端修改文件属性的刷新、由NFS引起的系统无法正常启动、NFSv4延迟响应、proc文件系统中潜在的use after free、watchdog超时重启等问题。对系统异常现象进行调查分析，并提出解决方案。利用Gitolite, git-daemon, cgit，Apache2和grokmirror等工具为团队搭建了git仓库管理系统。}
   \end{itemize}
 
 % \end{itemize}
@@ -55,7 +55,7 @@
 \role{硕士研究生}{专业：计算机科学与技术 方向：软件分析与逆向工程}
 \begin{itemize}
 \item {主要成就：设计并实现了在动态二进制翻译过程中，对本地库函数的调用，极大的提升了动态二进制翻译系统的效率。实现了C程序利用静态翻译生成的指令在目标平台的封装}
-  \item {期间发表学术论文两篇(知网检索一篇), 学位论文一篇。}
+  \item {期间发表学术论文《动态二进制翻译中的API优化》、《一种基于二进制翻译的共享库文件移植技术》, 学位论文《面向动态链接库的二进制翻译技术研究》。}
 \end{itemize}
 \datedsubsection{\textbf{河北理工大学}, 河北, 唐山}{2010年9月 -- 2014年7月}
 \role{学士}{专业：计算机科学与技术}
@@ -100,8 +100,8 @@
 \section{\faInfo\ 其他}\normalsize
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}
-\item {有用两年的技术支持工作经验，养成了工作认真，思维严谨的好习惯。自学机器学习、深度学习和自然语言处理等技术，具有良好的学习能力和自我驱动能力。喜欢健身、跑步，身体健康。}
-\item{参加阿里云天池命名实体识别大赛，积极与相关社区人员互动，在2000多支队伍中，初赛取得了Top100的成绩。能够积极主动与人交流。}
+\item {多年的debug经验，工作认真，思维严谨。喜欢健身、跑步，身体健康。}
+  \item {自学机器学习、深度学习和自然语言处理等技术，获得了coursera机器学习证书}\href{https://www.coursera.org/account/accomplishments/verify/NFCZEBTZ5T4L}{coursera verify}{,具有良好的学习能力和自我驱动能力。}
 \end{itemize}
 
 %% Reference
